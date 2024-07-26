@@ -1,0 +1,169 @@
+.header{
+     position: relative;
+}
+
+.shopping-mall{
+     position:absolute;
+     bottom: 20px;
+     font-variant: small-caps;
+     padding-left: 40px;
+}
+
+.shopping-mall>h1{
+     font-family: Impact;
+     font-size: 50px;
+     font-style: 50px;
+     color: white;
+     letter-spacing: 0.3px;
+     text-shadow: 0 0 2px black;
+     padding-bottom: 1px dotted gray;
+     margin:0px;
+}
+.shopping-mall>h5{
+     margin-top: 5px;
+     letter-spacing: 0.5px;
+}
+
+.poly-cart{
+     margin-top:5px;
+}
+
+.poly-cart ul{
+     padding:0px;
+     margin: 0px;
+     list-style: none;
+     font-variant: small-caps;
+}
+.poly-cart .card-header strong{
+     font-variant:small-caps;
+     font-size: larger;
+     text-shadow: 0 0 2px darkgray;
+     background-color: black;
+}
+.poly-prod{
+     text-align: center;
+}
+.poly-prod .card-body img{
+     height: 150px;
+     max-width: 90%;
+}
+.carousel-item img{
+     margin: 0 auto;
+     height: 500px;
+}
+.carousel-caption {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+   }
+   /* Hiệu ứng hover cho sản phẩm */
+.product:hover {
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+     transition: all 0.3s ease; /* Hiệu ứng chuyển động mềm mại */
+ }
+ 
+ .product img {
+     transition: transform 0.3s ease; /* Hiệu ứng chuyển động cho hình ảnh */
+ }
+ .productsp img{
+     max-width: 97%;
+ }
+ 
+ .line-left {
+     position: absolute;
+     top: 50%;
+     left: 0;
+     transform: translateY(-50%);
+     width: 25%;
+     background-color:red;
+     height: 3px; /* Đặt độ dày cho đường line */
+ }
+ 
+ .line-right {
+     position: absolute;
+     top: 50%;
+     right: 0;
+     transform: translateY(-50%);
+     width: 25%;
+     background-color:red;
+    height: 3px; /* Đặt độ dày cho đường line */
+ }
+.size:focus{
+     border: 2px solid red;
+ }
+ .half-circle, .half-circle1 {
+     width: 40px; /* Độ rộng của hình tròn */
+     height: 40px; /* Chiều cao của hình tròn */
+     border-radius: 50%; /* Tạo hình dạng hình tròn */
+     overflow: hidden; /* Ẩn phần nội dung vượt ra ngoài phần cắt */
+     position: relative; /* Định vị tương đối */
+   }
+
+   .half-circle:before {
+     content: ''; /* Tạo phần tử giả */
+     position: absolute; /* Định vị tuyệt đối */
+     top: 0;
+     bottom: 0;
+     width: 50%; /* Độ rộng của mỗi nửa */
+     background-color: white; /* Màu mặc định */
+   }
+
+   .half-circle:after {
+     content: ''; /* Tạo phần tử giả */
+     position: absolute; /* Định vị tuyệt đối */
+     top: 0;
+     bottom: 0;
+     width: 50%; /* Độ rộng của mỗi nửa */
+     background-color: black; /* Màu mặc định */
+     right: 0; /* Dịch sang phải */
+   }
+   /* Hiệu ứng focus */
+   .half-circle:focus {
+     border: 2px solid red; /* Viền xung quanh khi được focus */
+   }
+
+   .half-circle1:before {
+     content: ''; /* Tạo phần tử giả */
+     position: absolute; /* Định vị tuyệt đối */
+     top: 0;
+     bottom: 0;
+     width: 50%; /* Độ rộng của mỗi nửa */
+     background-color: white; /* Màu mặc định */
+   }
+
+   .half-circle1:after {
+     content: ''; /* Tạo phần tử giả */
+     position: absolute; /* Định vị tuyệt đối */
+     top: 0;
+     bottom: 0;
+     width: 50%; /* Độ rộng của mỗi nửa */
+     background-color: grey; /* Màu mặc định */
+     right: 0; /* Dịch sang phải */
+   }
+   /* Hiệu ứng focus */
+   .half-circle1:focus {
+     border: 2px solid red; /* Viền xung quanh khi được focus */
+   }
+   .btn-underline {
+     text-decoration: none;
+     position: relative;
+ }
+
+ .btn-underline::before {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 0;
+     height: 2px;
+     background-color: black;
+ }
+
+ .btn-underline:hover::before {
+     width: 100%;
+ }
+ .tintuc:hover{
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+     transition: all 0.3s ease; /* Hiệu ứng chuyển động mềm mại */
+ }

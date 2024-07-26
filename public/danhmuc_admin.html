@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="height: 100px;" >
+          <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img src="img/logoxshop-Photoroom.png-Photoroom.png" href="trangchu.html" alt="Logo" width="150" height="130">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav text-center">
+                      <li class="nav-item">
+                          <a class="nav-link" href="trangchu.html">
+                              <i class="fa-solid fa-house"></i>
+                              Trang chủ
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="product_admin.html">
+                              Sản phẩm
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="danhmuc_admin.html">
+                              Danh mục
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="taikhoan_admin.html">
+                              Tài khoản
+                          </a>
+                      </li>
+                  </ul>
+
+                  <ul class="navbar-nav ms-auto me-2">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="cart.html">
+                            Chào admin !
+                        </a>
+                    </li>
+                </ul>
+              </div>
+          </div>
+      </nav>
+      <h1 class="text-center my-3">QUẢN LÝ DANH MỤC</h1>
+      <div class="container">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+               ADD Category
+           </button>
+           
+           <!-- Modal ADD-->
+           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog">
+               <div class="modal-content">
+                   <div class="modal-header">
+                   <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="">Tên danh mục</label>
+                                <input type="text" class="form-control" placeholder="Thêm tên sản phẩm">
+                            </div>
+                            <div class="mb-3">
+                                <label for="">Hình ảnh</label>
+                                <input type="file" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <button class="btn btn-dark float-end">ADD</button>
+                            </div>
+                            
+                        </form>
+                   </div>
+               </div>
+               </div>
+           </div>
+           <!-- Modal UPDATE-->
+           <div class="modal fade" id="exampleModalup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="">Tên danh mục</label>
+                            <input type="text" class="form-control" placeholder="Thêm tên sản phẩm">
+                        </div>
+                        <div class="mb-3">
+                            <label for="">Hình ảnh</label>
+                            <input type="file" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-dark float-end">UPDATE</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+          <table class="table table-hover align-middle w-75 m-auto">
+               <thead>
+                   <tr>
+                       <th>STT</th>
+                       <th scope="col">IMG</th>
+                       <th scope="col">Tên danh mục</th>
+                       <th scope="col">Thao tác</th>
+                   </tr>
+               </thead>
+                   <tr>
+                      <td>1</td>
+
+                       <td><img src="img/balo.jpg" alt="" style="width:60px"></td>
+
+                       <td>Balo</td>
+
+                       <td style="max-width: 15px;">
+                            <a href="" class="link-danger text-decoration-none">Xóa |</a>
+                            <a href="" class="link-danger text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModalup">Sửa</a>
+                       </td>
+                   </tr>
+                   <tr>
+                    <td>2</td>
+
+                     <td><img src="img/giaynam2.jpg" alt="" style="width:60px"></td>
+
+                     <td>Giày thể thao</td>
+
+                     <td style="max-width: 15px;">
+                          <a href="" class="link-danger text-decoration-none">Xóa |</a>
+                          <a href="" class="link-danger text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModalup">Sửa</a>
+                     </td>
+                 </tr>
+                 <tr>
+                    <td>3</td>
+
+                     <td><img src="img/dép2.jpg" alt="" style="width:60px"></td>
+
+                     <td>Dép</td>
+
+                     <td style="max-width: 15px;">
+                          <a href="" class="link-danger text-decoration-none">Xóa |</a>
+                          <a href="" class="link-danger text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModalup">Sửa</a>
+                     </td>
+                 </tr>
+
+           </table>
+      </div>
+      
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>  
+<script src="https://kit.fontawesome.com/92da2d2d85.js" crossorigin="anonymous"></script>
+</body>
+</html>
